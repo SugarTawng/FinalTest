@@ -1,0 +1,51 @@
+INSERT INTO DIENTHOAI (IMEI, TENDT, LOAIDT, HOTENKH, SDTKH)
+VALUES
+  ('IMEI001', 'Điện thoại 1', 'Loại 1', 'Nguyễn Văn A', '0987654321'),
+  ('IMEI002', 'Điện thoại 2', 'Loại 2', 'Trần Thị B', '0123456789'),
+  ('IMEI003', 'Điện thoại 3', 'Loại 1', 'Lê Văn C', '0932112233'),
+  ('IMEI004', 'Điện thoại 4', 'Loại 2', 'Phạm Thị D', '0845678910'),
+  ('IMEI005', 'Điện thoại 5', 'Loại 1', 'Hoàng Văn E', '0765432109'),
+  ('IMEI006', 'Điện thoại 6', 'Loại 2', 'Vũ Thị F', '0654321098'),
+  ('IMEI007', 'Điện thoại 7', 'Loại 1', 'Đặng Văn G', '0543210987'),
+  ('IMEI008', 'Điện thoại 8', 'Loại 2', 'Trịnh Thị H', '0432109876'),
+  ('IMEI009', 'Điện thoại 9', 'Loại 1', 'Lý Văn I', '0321098765'),
+  ('IMEI010', 'Điện thoại 10', 'Loại 2', 'Ngô Thị K', '0210987654');
+
+INSERT INTO SUACHUA (MAPSC, NGAYLAP, NOIDUNG, IMEI, TONGTIEN)
+VALUES
+  (1, '2023-06-01', 'Sửa lỗi màn hình', 'IMEI001', 100000),
+  (2, '2023-06-02', 'Thay pin mới', 'IMEI002', 50000),
+  (3, '2023-06-03', 'Nâng cấp phần mềm', 'IMEI003', 200000),
+  (4, '2023-06-04', 'Thay màn hình', 'IMEI004', 150000),
+  (5, '2023-06-05', 'Sửa lỗi âm thanh', 'IMEI005', 80000),
+  (6, '2023-06-06', 'Thay pin cũ', 'IMEI006', 60000),
+  (7, '2023-06-07', 'Nâng cấp bộ nhớ', 'IMEI007', 250000),
+  (8, '2023-06-08', 'Thay cảm biến', 'IMEI008', 120000),
+  (9, '2023-06-09', 'Sửa lỗi cảm ứng', 'IMEI009', 90000),
+  (10, '2023-06-10', 'Thay loa ngoài', 'IMEI010', 70000);
+
+INSERT INTO CONGVIEC (MACV, TENCV, DONGIA)
+VALUES
+  (1, 'Sửa lỗi màn hình', 100000),
+  (2, 'Thay pin mới', 50000),
+  (3, 'Nâng cấp phần mềm', 200000),
+  (4, 'Thay màn hình', 150000),
+  (5, 'Sửa lỗi âm thanh', 80000),
+  (6, 'Thay pin cũ', 60000),
+  (7, 'Nâng cấp bộ nhớ', 250000),
+  (8, 'Thay cảm biến', 120000),
+  (9, 'Sửa lỗi cảm ứng', 90000),
+  (10, 'Thay loa ngoài', 70000);
+
+INSERT INTO CT_SC (MAPSC, MACV)
+VALUES
+  (1, 1),
+  (1, 2),
+  (2, 3),
+  (2, 4),
+  (3, 5),
+  (3, 6),
+  (4, 7),
+  (4, 8),
+  (5, 9),
+  (5, 10);
